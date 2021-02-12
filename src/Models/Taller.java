@@ -93,7 +93,7 @@ public class Taller {
 						do {
 							conductoresDisponibles(listaConductores, nuevoVehiculo.getClass().getSimpleName());
 							//TODO Hay que controlar el dato que nos pasa el usuario.
-							conductorElegido = solicitarDatosInt("Introduzca el titular seleccionado") - 1;
+							conductorElegido = solicitarDatosInt("Introduzca el conductor seleccionado") - 1;
 							nuevoVehiculo.addConductor(listaConductores.get(conductorElegido));
 
 							exitConductor = (darOpciones(opcionSiNo, "¿Agregar más?") == 0) ? false : true;
